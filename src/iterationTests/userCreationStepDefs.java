@@ -64,12 +64,14 @@ public class userCreationStepDefs {
 
 	@Then("^I am directed to the User list page$")
 	public void i_am_directed_to_the_User_list_page() throws Throwable {
-		boolean correctPage = userListPage.verifyCorrectUrl();
-//		System.out.println("Redirected to the User List page: " +correctPage);
+//		Temporarily commented out because verifyCorrrectUrl method incorrectly returns false as it does not accurately wait.
+//		assertTrue("I was directed to the user list page.", userListPage.verifyCorrectUrl());
 	}
 
 	@Then("^The user appears in the list$")
 	public void the_user_appears_in_the_list() throws Throwable {
+		
+//		TODO: the logic should be abstracted out to a helper method.
 		List<Map<String, String>> pageData = userListPage.getUserTable();
 		int matchesNeeded = users.size();
 		int matchesFound = 0;
@@ -80,7 +82,9 @@ public class userCreationStepDefs {
 				if (map1.values().containsAll(map2.values())) matchesFound ++;
 			}
 		}
-		assertTrue("Matches needed should be equal to matches found.", matchesNeeded < matchesFound);
+		
+//		Currently there is no restriction on duplicates in the DB.
+		assertTrue("Matches needed should be equal to matches found.", matchesNeeded <= matchesFound);
 	}
 	
 	@After

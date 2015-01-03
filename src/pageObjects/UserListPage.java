@@ -22,6 +22,11 @@ public class UserListPage extends BasePage {
 		return super.getUrl().contains("/userlist");
 	}
 	
+/*
+ * This method is incredibly slow because of the number of findElement calls.
+ * TODO: Reduce Selenium calls and focus on speeding by doing most of the manipulation after gathering table date. 
+ */
+	
 	public List<Map<String, String>> getUserTable() {
 		List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 		
