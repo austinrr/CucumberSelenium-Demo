@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="49.118741">
+<testcase classname="User Creation" name="Create Valid User" time="49.118741">
+<failure message="java.lang.AssertionError: Matches needed should be equal to matches found.&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at iterationTests.userCreationStepDefs.the_user_appears_in_the_list(userCreationStepDefs.java:83)&#13;&#10;&#9;at ✽.And The user appears in the list(iterationTests/userCreation.feature:10)&#13;&#10;"><![CDATA[Given I am on the NewUser page..............................................passed
+When I submit a new user:...................................................passed
+Then I am directed to the User list page....................................passed
+And The user appears in the list............................................failed
+
+StackTrace:
+java.lang.AssertionError: Matches needed should be equal to matches found.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at iterationTests.userCreationStepDefs.the_user_appears_in_the_list(userCreationStepDefs.java:83)
+	at ✽.And The user appears in the list(iterationTests/userCreation.feature:10)
+]]></failure>
+</testcase>
+</testsuite>

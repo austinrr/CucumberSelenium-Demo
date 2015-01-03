@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/cucumber-core-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/cucumber-html-0.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/cucumber-java-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/cucumber-junit-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/cucumber-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/gherkin-jvm-deps-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/selenium-java-2.44.0.jar" sourcepath="C:/Users/Austin/workspace/dependencies/selenium-java-2.44.0-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Austin/workspace/dependencies/selenium-server-standalone-2.44.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
