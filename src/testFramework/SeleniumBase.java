@@ -52,6 +52,7 @@ public class SeleniumBase {
 	}
 	
 	private void setProps() {
+//		I think reading the file is broken because the thread is not properly closed.
 //		this.baseUrl = props.getProperty(baseUrl);
 //		this.browserName = props.getProperty(browserName);
 //		this.browserVersion = props.getProperty(browserVersion, null);
